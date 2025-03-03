@@ -21,8 +21,19 @@ document.addEventListener("DOMContentLoaded", event => {
         image.src = project.projectImage
         image.classList.add("project-image")
 
+        const desc = document.createElement("p")
+        desc.innerText = project.projectDesc
+        desc.classList.add("project-text")
+
+        const githubLink = document.createElement("a")
+        githubLink.href = project.projectLink
+        githubLink.innerText = "Link"
+        githubLink.classList.add("project-link")
+
         container.append(image)
         container.append(title)
+        container.append(desc)
+        container.append(githubLink)
 
         projects.append(container)
     })
