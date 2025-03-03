@@ -47,7 +47,7 @@ back.addEventListener("click", event => {
     projects.scrollBy(-(width + gap), 0)
 })
 
-form.addEventListener("submit", event => {
+form.addEventListener("submit", event => { //form validation?
     event.preventDefault()
 
     //take the form contents and send them somewhere
@@ -69,6 +69,7 @@ form.addEventListener("submit", event => {
     container.style.backgroundColor = "lightgreen"
     container.style.padding = "10px"
     container.style.width = "fit-content"
+    container.style.borderRadius = "1rem"
 
     form.appendChild(container)
 })

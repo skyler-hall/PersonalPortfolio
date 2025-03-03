@@ -175,28 +175,52 @@
 
 .form-section {
     width: 50%;
+    text-align: center;
 
     margin-left: auto;
     margin-right: auto;
 }
 
 form {
+    margin: 10px 0;
     display:flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
+form label {
+    color: #ff8c00;
+    font-weight: bold;
+}
+
 form input {
-    width: 25%;
+    color: black;
+    width: 50%;
     border: solid 1px;
-    border-radius: 8px;
+    border-radius: 1rem;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 form textarea {
-    width: 75%;
+    width: 50%;
+    color: black;
+    margin: 10px 0;
+    border-radius: 1rem;
+    padding: 10px;
+    scrollbar-width: none;
+    border: 1px solid black;
 }
 
 form button {
     width: 120px;
+    color: black;
+    border: none;
+    padding: 5px 0;
+    border-radius: 1rem;
+    margin: 10px 0;
 }
 
 /* --------------------------------------------------------------------------------------------------------------- */
@@ -311,6 +335,10 @@ footer {
     background-color: #ff8c00; /* Orange color on hover */
     transform: scale(1.02); /* Reduced scale to prevent overflow */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow to prevent overflow */
+}
+
+.bio-section p, .bio-section li {
+    color: black;
 }
 
 .hidden-text {
