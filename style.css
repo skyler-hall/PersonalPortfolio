@@ -146,18 +146,18 @@ footer {
     color: #555;
 }
 
-.hidden-text {
-    display: none;
-}
-
-.ellipsis {
-    display: inline;
-}
-
 .experience:hover .hidden-text {
     display: inline;
 }
 
 .experience:hover .ellipsis {
     display: none;
+}
+
+.hidden-text {
+    display: none;
+}
+
+.ellipsis {
+    display: inline;
 }
