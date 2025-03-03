@@ -3,6 +3,8 @@
     margin: auto 0 auto 0;
 }
 
+/* --------------------------------------------------------------------------------------------------------------- */
+
 .container {
     margin-top: 80px;
     justify-content: center;
@@ -50,6 +52,57 @@
     border-radius: 100px;
 }
 
+/* --------------------------------------------------------------------------------------------------------------- */
+
+.carousel {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projects {
+    width: 50%;
+    max-width: 600px;
+    
+    overflow: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    display: flex;
+    gap: 30px;
+}
+
+.project-card {
+    min-width: 100%;
+}
+
+.project-card:hover {
+    
+}
+
+.project-title {
+    font-size: 1.6rem;
+    text-align: center;
+
+    margin-top: 10px;
+}
+
+.project-image {
+    max-width: 600px;
+
+    display: block; /* Optional center image */
+    margin: auto;
+
+    object-fit: scale-down; /*Optional insurance */
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
 .form-section {
     width: 50%;
 
@@ -75,6 +128,8 @@ form textarea {
 form button {
     width: 120px;
 }
+
+/* --------------------------------------------------------------------------------------------------------------- */
 
 footer {
     display: flex;
@@ -105,6 +160,8 @@ footer {
 .footer-content a:hover {
     color: #ff8c00; /* Highlight color on hover */
 }
+
+/* --------------------------------------------------------------------------------------------------------------- */
 
 .experiences {
     background-color: #333; /* Dark gray color */
