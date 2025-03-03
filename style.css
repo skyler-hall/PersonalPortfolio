@@ -5,10 +5,13 @@
 
 .container {
     margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #333;
 }
 
 .header {
-    background-color: hsl(0, 0%, 80%);
 
     margin: 20px 0 20px 0;  /* Top right bottom left */
     padding: 50px 0 50px 0; /*Box model */
@@ -71,4 +74,90 @@ form textarea {
 
 form button {
     width: 120px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222; /* Darker shade for contrast */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    width: 100%;
+    margin: 20px auto; /* Center the footer */
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #ff8c00; /* Highlight color on hover */
+}
+
+.experiences {
+    background-color: #333; /* Dark gray color */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.experiences-title {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.experience {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for highlight effect */
+}
+
+.experience:hover {
+    background-color: #ff8c00; /* Orange color on hover */
+    transform: scale(1.02); /* Reduced scale to prevent overflow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow to prevent overflow */
+}
+
+.experience h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.experience p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #555;
+}
+
+.hidden-text {
+    display: none;
+}
+
+.ellipsis {
+    display: inline;
+}
+
+.experience:hover .hidden-text {
+    display: inline;
+}
+
+.experience:hover .ellipsis {
+    display: none;
 }
