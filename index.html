@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Personal Portfolio</title>
 </head>
 <body>
     <div class="container">
-        </section>
-                <!-- Header + Intro  + Education // Roseline -->
-        </section>
+        <!-- Header + Intro  + Education // Roseline -->
+        <header class="header">
+            <div class="header-text-section"> <!--Info-->
+                <h1>Some Guy McProgrammer</h1>
+                <h2>Web Development | AI/ML | Class of 2077</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae distinctio ab inventore error. Excepturi, nisi facilis laborum, labore minus blanditiis maxime ratione voluptatibus praesentium tempore cupiditate aliquam ipsum soluta sint!</p>
+            </div>
+            <div> <!--Pfp-->
+                <img class="header-image" src="https://cdn-icons-png.freepik.com/512/3682/3682323.png" alt=""/>
+            </div>
+        </header>
         <section class="bio">
             <div class="bio-title">Bio - Skyler</div>
             <div class="about">About - Skyler</div>
@@ -24,8 +33,19 @@
             <div class="work">Work 2 - Skyler</div>
             <div class="work">Work 3 - Skyler</div>
         </section>
-        <section>
-            <!-- Contact me // JavaScript // Roseline -->
+        <!-- Contact me // JavaScript // Roseline -->
+        <section class="form-section">
+            <h3>Contact Me</h3>
+            <p>Interested in my work? Let's get connected!</p>
+            <form id="form">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"/>
+                
+                <label for="email-body">Email Body</label>
+                <textarea id="email-body"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
         </section>
         <footer>
             <div class="footer-content">Footer - Skyler</div>
