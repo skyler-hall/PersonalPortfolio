@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", event => {
         githubLink.innerText = "Link"
         githubLink.classList.add("project-link")
 
+        githubLink.classList.add("project-link")
+
         container.append(image)
         container.append(title)
         container.append(desc)
