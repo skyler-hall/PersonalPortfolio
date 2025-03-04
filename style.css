@@ -304,43 +304,6 @@ footer {
     display: none;
 }
 
-.bio-section {
-    background-color: #333; /* Dark gray color */
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.bio-card,
-.about-card,
-.skills-card {
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-
-}
-
-.bio-title,
-.about-title,
-.skills-title {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-    color: white;
-    text-align: center;
-}
-
-.bio-card:hover,
-.about-card:hover,
-.skills-card:hover {
-    background-color: #ff8c00; /* Orange color on hover */
-    transform: scale(1.02); /* Reduced scale to prevent overflow */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow to prevent overflow */
-}
-
-.bio-section p, .bio-section li {
-    color: black;
-}
-
 .hidden-text {
     display: none;
 }
