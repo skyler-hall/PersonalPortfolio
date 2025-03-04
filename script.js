@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", event => {
 
         projects.append(container)
     })
+
 })
 
 next.addEventListener("click", event => {
@@ -49,29 +50,50 @@ back.addEventListener("click", event => {
     projects.scrollBy(-(width + gap), 0)
 })
 
-form.addEventListener("submit", event => { //form validation?
-    event.preventDefault()
+//-----------------------------------------------------------------
+const drawerItems = document.querySelectorAll(".info-wrapper")
+const drawerAnswers = document.querySelectorAll(".answer")
+drawerItems.forEach(item => {
+    console.log("entered foreach")
+    const question = item.querySelector(".question")
+    const answer = item.querySelector(".answer")
+    question.addEventListener("click", () => {
+        console.log('entered')
+        let open = answer.classList.contains("open")
+        drawerAnswers.forEach(answer => (answer.classList.remove('open')))
 
-    //take the form contents and send them somewhere
-    const emailInput = document.getElementById("email")
-    const commentInput = document.getElementById("comment")
-
-    const email = emailInput.value
-    const comment = commentInput.value
-
-    console.log(email, comment)
-
-    //generate a success message
-    const container = document.createElement("div")
-
-    const text = document.createElement("p")
-    text.innerText = "Thank you for your interest!"
-
-    container.append(text)
-    container.style.backgroundColor = "lightgreen"
-    container.style.padding = "10px"
-    container.style.width = "fit-content"
-    container.style.borderRadius = "1rem"
-
-    form.appendChild(container)
+        if(!open) {
+            answer.classList.add("open")
+        }
+    })
 })
+
+
+//-----------------------------------------------------------------
+
+// form.addEventListener("submit", event => { //form validation?
+//     event.preventDefault()
+
+//     //take the form contents and send them somewhere
+//     const emailInput = document.getElementById("email")
+//     const commentInput = document.getElementById("comment")
+
+//     const email = emailInput.value
+//     const comment = commentInput.value
+
+//     console.log(email, comment)
+
+//     //generate a success message
+//     const container = document.createElement("div")
+
+//     const text = document.createElement("p")
+//     text.innerText = "Thank you for your interest!"
+
+//     container.append(text)
+//     container.style.backgroundColor = "lightgreen"
+//     container.style.padding = "10px"
+//     container.style.width = "fit-content"
+//     container.style.borderRadius = "1rem"
+
+//     form.appendChild(container)
+// })
