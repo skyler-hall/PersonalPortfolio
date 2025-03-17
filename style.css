@@ -76,6 +76,46 @@
 
 /* --------------------------------------------------------------------------------------------------------------- */
 
+
+.skills-section {
+    background-color: #333; /* Dark gray color */
+    padding: 20px;
+    margin-top: 20px;
+    color: black;
+}
+
+.skills-section:hover {
+    color: black;
+}
+
+.skills-card {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+
+}
+
+.skills-title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: white;
+    text-align: center;
+}
+
+.skills-card:hover {
+    background-color: #ff8c00; /* Orange color on hover */
+    transform: scale(1.02); /* Reduced scale to prevent overflow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow to prevent overflow */
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
 .projects-section h2 {
     font-size: 2rem;
     font-weight: lighter;
@@ -173,8 +213,76 @@
     cursor: pointer;
 }
 
+/* --------------------------------------------------------------------------------------------------------------- */
+
+.experiences {
+    background-color: #333; /* Dark gray color */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.experiences-title {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.experience {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for highlight effect */
+}
+
+.experience:hover {
+    background-color: #ff8c00; /* Orange color on hover */
+    transform: scale(1.02); /* Reduced scale to prevent overflow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow to prevent overflow */
+}
+
+.experience h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.experience-header h3 {
+    color: black;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: black;
+}
+
+.experience:hover .hidden-text {
+    color: black;
+}
+
+.ellipsis {
+    color: black;
+}
+
+.experience:hover .hidden-text {
+    display: inline;
+}
+
+.experience:hover .ellipsis {
+    display: none;
+}
+
 
 /* --------------------------------------------------------------------------------------------------------------- */
+
 .info-section-container {
     margin: auto;
     text-align: center;
@@ -316,107 +424,7 @@ footer {
 
 /* --------------------------------------------------------------------------------------------------------------- */
 
-.experiences {
-    background-color: #333; /* Dark gray color */
-    padding: 20px;
-    margin-top: 20px;
-}
 
-.experiences-title {
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.experience {
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for highlight effect */
-}
-
-.experience:hover {
-    background-color: #ff8c00; /* Orange color on hover */
-    transform: scale(1.02); /* Reduced scale to prevent overflow */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow to prevent overflow */
-}
-
-.experience h3 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.experience-header h3 {
-    color: black;
-}
-
-.experience-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.experience p {
-    font-size: 1rem;
-    line-height: 1.4;
-    color: black;
-}
-
-.experience:hover .hidden-text {
-    color: black;
-}
-
-.ellipsis {
-    color: black;
-}
-
-.experience:hover .hidden-text {
-    display: inline;
-}
-
-.experience:hover .ellipsis {
-    display: none;
-}
-
-.skills-section {
-    background-color: #333; /* Dark gray color */
-    padding: 20px;
-    margin-top: 20px;
-    color: black;
-}
-
-.skills-section:hover {
-    color: black;
-}
-
-.skills-card {
-    display: flex;
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-
-}
-
-.skills-title {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-    color: white;
-    text-align: center;
-}
-
-.skills-card:hover {
-    background-color: #ff8c00; /* Orange color on hover */
-    transform: scale(1.02); /* Reduced scale to prevent overflow */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow to prevent overflow */
-}
 
 .hidden-text {
     display: none;
@@ -425,3 +433,6 @@ footer {
 .ellipsis {
     display: inline;
 }
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
