@@ -280,6 +280,13 @@
     display: none;
 }
 
+.hidden-text {
+    display: none;
+}
+
+.ellipsis {
+    display: inline;
+}
 
 /* --------------------------------------------------------------------------------------------------------------- */
 
@@ -338,8 +345,43 @@
     background-color: rgb(242, 242, 242);
 }
 
+/* --------------------------------------------------------------------------------------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222; /* Darker shade for contrast */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    width: 100%;
+    margin: 20px auto; /* Center the footer */
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #ff8c00; /* Highlight color on hover */
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
 /* Old Form Section -------------------------------------------------------------------------------------------------- */
-.form-section {
+/* .form-section {
     width: 50%;
     text-align: center;
 
@@ -387,52 +429,4 @@ form button {
     padding: 5px 0;
     border-radius: 1rem;
     margin: 10px 0;
-}
-
-/* --------------------------------------------------------------------------------------------------------------- */
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #222; /* Darker shade for contrast */
-    color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    padding: 1rem 0;
-    width: 100%;
-    margin: 20px auto; /* Center the footer */
-    margin-bottom: 0;
-    text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    gap: 20px;
-    justify-content: center; /* Center the content horizontally */
-}
-
-.footer-content a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-.footer-content a:hover {
-    color: #ff8c00; /* Highlight color on hover */
-}
-
-/* --------------------------------------------------------------------------------------------------------------- */
-
-
-
-.hidden-text {
-    display: none;
-}
-
-.ellipsis {
-    display: inline;
-}
-
-/* --------------------------------------------------------------------------------------------------------------- */
-
+} */
