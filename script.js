@@ -6,7 +6,7 @@ const projects = document.getElementById("projects")
 const form = document.getElementById("form")
 
 const gap = 30;
-const width = projects.offsetWidth 
+let width = projects.offsetWidth //set width initially
 
 document.addEventListener("DOMContentLoaded", event => {
     projectsInfo.forEach(project => {
@@ -43,10 +43,13 @@ document.addEventListener("DOMContentLoaded", event => {
 })
 
 next.addEventListener("click", event => {
+    width = projects.offsetWidth //recalculate for resizing
     projects.scrollBy(width + gap, 0)
+    console.log(width)
 })
 
 back.addEventListener("click", event => {
+    width = projects.offsetWidth //recalculate for resizing
     projects.scrollBy(-(width + gap), 0)
 })
 
@@ -54,11 +57,11 @@ back.addEventListener("click", event => {
 const drawerItems = document.querySelectorAll(".info-wrapper")
 const drawerAnswers = document.querySelectorAll(".answer")
 drawerItems.forEach(item => {
-    console.log("entered foreach")
+
     const question = item.querySelector(".question")
     const answer = item.querySelector(".answer")
     question.addEventListener("click", () => {
-        console.log('entered')
+
         let open = answer.classList.contains("open")
         drawerAnswers.forEach(answer => (answer.classList.remove('open')))
 
