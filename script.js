@@ -1,15 +1,15 @@
 import { projectsInfo } from "./projects.js"
 
-const next = document.getElementById("next")
-const back = document.getElementById("back")
-const projects = document.getElementById("projects")
-const form = document.getElementById("form")
+const next = document.getElementById("next") //select the next button
+const back = document.getElementById("back") //select the back button
+const projects = document.getElementById("projects") //select the projects section
+//const form = document.getElementById("form")
 
-const gap = 30;
+const gap = 30; //gap constant for the gaps between the project cards
 let width = projects.offsetWidth //set width initially
 
-document.addEventListener("DOMContentLoaded", event => {
-    projectsInfo.forEach(project => {
+document.addEventListener("DOMContentLoaded", event => { //on page load, we'll want to load in all our project cards
+    projectsInfo.forEach(project => { //for each object in the array,
         const container = document.createElement("div") //make a new div container for the project card
         container.classList.add("project-card")
 
@@ -21,17 +21,19 @@ document.addEventListener("DOMContentLoaded", event => {
         image.src = project.projectImage
         image.classList.add("project-image")
 
-        const desc = document.createElement("p")
+        const desc = document.createElement("p") //make a description paragraph
         desc.innerText = project.projectDesc
         desc.classList.add("project-text")
 
-        const githubLink = document.createElement("a")
+        const githubLink = document.createElement("a") //make a link to the repo
         githubLink.href = project.projectLink
+        //githubLink.setAttribute("target", "_blank")
         githubLink.innerText = "Link"
         githubLink.classList.add("project-link")
 
-        githubLink.classList.add("project-link")
+        //githubLink.classList.add("project-link")
 
+        //
         container.append(image)
         container.append(title)
         container.append(desc)
@@ -39,35 +41,41 @@ document.addEventListener("DOMContentLoaded", event => {
 
         projects.append(container)
     })
-
 })
 
-next.addEventListener("click", event => {
+next.addEventListener("click", event => { //go to next card
     width = projects.offsetWidth //recalculate for resizing
     projects.scrollBy(width + gap, 0)
     console.log(width)
 })
 
-back.addEventListener("click", event => {
+back.addEventListener("click", event => { //prev card
     width = projects.offsetWidth //recalculate for resizing
     projects.scrollBy(-(width + gap), 0)
 })
 
-//-----------------------------------------------------------------
-const drawerItems = document.querySelectorAll(".info-wrapper")
-const drawerAnswers = document.querySelectorAll(".answer")
-drawerItems.forEach(item => {
 
+
+//-----------------------------------------------------------------
+const drawerItems = document.querySelectorAll(".info-wrapper") //the outer drawer wrappers
+const drawerAnswers = document.querySelectorAll(".answer") //the answers
+
+drawerItems.forEach(item => {
     const question = item.querySelector(".question")
     const answer = item.querySelector(".answer")
+
     question.addEventListener("click", () => {
 
-        let open = answer.classList.contains("open")
+        //first, close all the drawers
+        let open = answer.classList.contains("open") //whether this drawer you've clicked is currently open
         drawerAnswers.forEach(answer => (answer.classList.remove('open')))
 
-        if(!open) {
+        if(!open) { //for this clicked drawer, if it wasn't already open, then open it
             answer.classList.add("open")
-        }
+        } //if it's already open, then it'll close due to line 70 
+
+        //we'll keep the others closed
+
     })
 })
 
